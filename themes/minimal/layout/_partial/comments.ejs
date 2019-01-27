@@ -1,0 +1,15 @@
+<hr>
+<h3 class="comments">Comments</h3>
+<form class="comments" method="POST" action="http://localhost:3000/comment/distantcam/GithubSandbox">
+  <input type="hidden" id="slug" name="slug" value="<%= page.slug %>">
+  <input type="hidden" id="title" name="title" value="<%= page.title %>">
+  <input type="text" id="comment" name="comment" value="A comment">
+  <input type="submit">
+</form>
+
+<% for (var comment of site.comments) { %>
+<% if (comment.slug === page.slug) { %>
+<div class="comment">
+<%= comment.comment %>
+</div>
+<% } } %>
