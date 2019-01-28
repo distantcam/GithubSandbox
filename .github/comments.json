@@ -2,6 +2,6 @@
   "moderate": true,
   "branch": "master",
   "commitMessage": "Added comment",
-  "path": "source/_data/comments/comment${timestamp}.json",
-  "pullRequestBody": "You have a new comment.\nOn post `${title}` a user left the following comment.\n> ${comment}\n"
+  "path": "source/_data/comments/comment{@timestamp}.json",
+  "pullRequestBody": "You have a new comment.\nOn post `{@title}` a user left the following comment.\n> {@comment}\n"
 }
